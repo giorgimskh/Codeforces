@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short test,ans=0,a,b,c;
+    cin >> test;
+    
+    while(test--){
+       cin >> a >> b >> c;
+       if(a+b+c>1) ++ans;
+    }
+    
+    cout << ans;
+}
