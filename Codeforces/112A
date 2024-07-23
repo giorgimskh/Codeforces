@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int k,m,sz;
+    string s,s1;
+    char x,y;
+    cin >> s >> s1;
+    sz=s.size();
+    
+    for(int i=0;i<sz;++i){
+        x=tolower(s[i]);
+        y=tolower(s1[i]);
+        k=int(x);
+        m=int(y);
+        if(k!=m){
+            if(k>m) {cout << 1; return 0;}
+                else {cout << -1; return 0;}
+           }
+    }
+    cout << 0;   
+}
