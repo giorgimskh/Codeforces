@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short a[5][5],check,check1;
+    
+    for(int i=0;i<5;++i){
+        for(int j=0;j<5;++j){
+            cin >> a[i][j];
+            if(a[i][j]!=0) {
+                check=i+1; 
+                check1=j+1;
+            }
+        }
+    }
+    cout << abs(check-3)+abs(check1-3);
+}
