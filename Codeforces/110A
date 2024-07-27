@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    long long n;
+    int check=0;
+    cin >> n;
+    
+    while(n){
+        if(n%10==7 || n%10==4) ++check;
+        n/=10;
+    }
+    if(check==4 || check==7) cout << "YES";
+        else cout << "NO";
+}
