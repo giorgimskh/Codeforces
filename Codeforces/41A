@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short k,m;
+    string s,t;
+    cin >> s >> t;
+    k=s.size();
+    m=t.size();
+    
+    if(k==m){
+        for(int i=0;i<k;++i){
+            if(s[i]!=t[m-i-1]) {
+                cout << "NO"; 
+                return 0;
+            }
+        }
+        cout << "YES";
+    }
+        else cout << "NO";
+}
