@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short n,a,b;
+    int ans=0,cap=0;
+    cin >> n;
+    
+    while(n--){
+        cin >> a >> b;
+        cap=cap-a+b;
+        if(cap>ans) ans=cap;
+    }
+    cout<< ans;
+}
