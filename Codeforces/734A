@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    string s;
+    int pl1=0,pl2=0,n;
+    cin >> n >> s;
+    
+    for(int i=0;i<n;++i){
+        if(s[i]=='A') ++pl1;
+            else ++pl2;
+    }
+    
+    if(pl1>pl2) cout << "Anton";
+    else if(pl2>pl1) cout << "Danik";
+        else cout << "Friendship";
+}
