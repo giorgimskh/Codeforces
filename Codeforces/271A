@@ -1,0 +1,27 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+bool check(int ans1){
+    set<int> st;
+    
+    while(ans1){
+        st.insert(ans1%10);
+        ans1/=10;
+    }
+    if(st.size()==4) return true;
+        else return false;
+}
+
+int main(){
+    int ans,y;
+    cin >> y;
+    ans=y+1;
+    
+    bool check1=check(ans);
+    while(check1==false){
+        ++ans;
+        check1=check(ans);
+    }
+    cout << ans;
+}
