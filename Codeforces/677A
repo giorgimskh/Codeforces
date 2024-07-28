@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short n,h1,h2,ans=0;
+    cin >> n >> h1;
+    
+    while(n--){
+        cin >> h2;
+        if(h2>h1) ans+=2;
+            else ans+=1;
+    }
+    cout << ans;
+}
