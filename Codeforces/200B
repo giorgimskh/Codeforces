@@ -1,0 +1,12 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    int k,n;
+    double m;
+    cin >> n;
+    
+    while(cin >> k) m+=k;
+    cout << fixed<< setprecision(12) << (m*100)/(n*100);
+}    
