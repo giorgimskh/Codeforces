@@ -1,0 +1,14 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main(){
+    char c,m;
+    set<char> st;
+    
+    while(cin >> c >> m){
+        if(c!='{' && c!=',') {st.insert(c); continue;}
+        if(m!='}' && m!=',') st.insert(m); 
+    }
+    cout << st.size();
+}
