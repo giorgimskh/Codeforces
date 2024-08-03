@@ -1,0 +1,28 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main(){
+    short n,k,p,q;
+    map<short,short> mp;
+    cin >> n >> p;
+    
+    while(p--){
+        cin >> k;
+        ++mp[k];
+    }
+    
+    cin >> q;
+    while(q--){
+        cin >> k;
+        ++mp[k];
+    }
+    
+    for(int i=1;i<=n;++i){
+        if(mp[i]==0) {
+            cout << "Oh, my keyboard!";
+            return 0;
+        }
+    }
+    cout << "I become the guy.";
+}
