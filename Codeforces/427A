@@ -1,0 +1,31 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main(){
+    int n,result=0;
+    short k,r;
+    stack<short>st;
+    cin >> n;
+
+    for(int i=1;i<=n;i++){
+        cin >> k;
+        if(k==-1){
+            if(st.empty()){
+                result++;
+            }
+            else{
+                r=st.top()-1;
+                if(r!=0) {
+                    st.pop();
+                    st.push(r);
+                }
+                else st.pop();
+            }
+        }
+        else {
+            st.push(k);
+        }
+    }
+    cout << result;
+}
