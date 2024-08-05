@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short n,point,check1,check2,ans=0;
+    cin >> n;
+    
+    for(int i=0;i<n;++i){
+        cin >> point;
+        if(i==0) {check1=point; check2=point; continue;}
+        //check if the point is max numb
+        if(point>check1) {++ans; check1=point;}
+        //check if the point is min number
+        if(point<check2) {++ans; check2=point;}
+    }
+    cout << ans;
+}
