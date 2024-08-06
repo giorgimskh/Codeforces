@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int drink,limes,salt;
+    short n,k,mil,lime,slice,gram,mil1,gram1;
+    cin >> n >> k >> mil >> lime >> slice >> gram >> mil1 >> gram1;
+    
+    drink=(k*mil)/mil1;
+    limes=lime*slice;
+    salt=gram/gram1;
+    
+    cout << min(min(drink,limes),salt)/n;
+}
