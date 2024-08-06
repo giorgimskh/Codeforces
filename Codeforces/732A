@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short price,coin,ans=0,k;
+    cin >> price >> coin;
+    k=price;
+    
+    while(price%10!=0 && (price-coin)%10!=0){
+        price+=k;
+        ++ans;
+    }
+    cout << ++ans;
+}
