@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    short t;
+    cin >> t;
+    
+    while(t--){
+        cin >> a >> b;
+        cout <<(a>b ? (a-b)/10+((a-b)%10>0):(b-a)/10+((b-a)%10>0)) << endl;
+    }  
+}
