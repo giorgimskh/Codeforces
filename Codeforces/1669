@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+short def(short a){
+    short ans;
+    
+    if(a<=1399) ans=4;
+    else if(a>=1400 && a<=1599) ans=3;
+    else if(a>=1600 && a<=1899) ans=2;
+        else ans=1;
+    return ans;
+}
+
+int main(){
+    short t,a;
+    cin >> t;
+    
+    while(t--){
+        cin>>a;
+        ans=def(a);
+        cout << "Division " << ans << endl;
+    }
+}
