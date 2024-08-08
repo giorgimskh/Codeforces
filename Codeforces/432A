@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short StudNumb,Numbpar,y,ans=0;
+    cin >> StudNumb >> Numbpar;
+    
+    while(cin >> y) ans+=(5-Numbpar-y>=0);
+    cout << ans/3;
+}
