@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int def(string a){
+    int ans;
+    
+    string text="codeforces";
+    ans=text.find(a);
+    return ans;
+}
+
+int main(){
+    short t,ans;
+    string s;
+    cin >> t;
+    
+     while(t--){
+        cin >> s;
+        ans=def(s);
+         
+        if(ans==string::npos) cout << "NO"<<endl;
+            else cout << "YES"<<endl;
+     }
+}
