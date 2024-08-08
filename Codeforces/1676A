@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,k;
+    short t;
+    cin >> t;
+    
+    while(t--){
+        cin >> n;
+        k=n/10;
+        short check=n%10+k%10+(k/10)%10,check1=(k/100)%10+(k/1000)%10+(k/1000)/10;
+        
+        if(check==check1) cout << "YES" <<endl;
+            else cout << "NO"<<endl;
+    }
+}
