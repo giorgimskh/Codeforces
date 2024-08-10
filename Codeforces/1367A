@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short t,k;
+    string s;
+    cin >> t;
+    
+    while(t--){
+        cin >> s;
+        k=s.size();
+        cout << s[0];
+        
+        for(int i=1;i<k;i+=2){
+            cout <<s[i];
+        }
+        cout << endl;
+    }
+}
