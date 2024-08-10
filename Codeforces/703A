@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short n,k=0,a=0,result;
+    pair<int,int>dice[101];
+    cin >>n;
+    
+    for(int i=0;i<n;i++){
+        cin >> dice[i].first >> dice[i].second;
+        if(dice[i].first > dice[i].second) k++;
+             else ++a;
+    }
+
+    if(k>a) cout << "Mishka";
+    else if(a>k) cout << "Chris";
+        else cout << "Friendship is magic!^^";
+}
