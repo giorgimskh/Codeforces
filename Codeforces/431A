@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int ans=0,k;
+    short a1,a2,a3,a4,m;
+    string s;
+    cin >> a1 >> a2 >> a3 >> a4 >> s;
+    
+    k=s.size();   
+    for(int i=0;i<k;++i){
+        m=s[i]-'0';
+        
+        if(m==1) ans+=a1;
+        else if(m==2) ans+=a2;
+        else if(m==3) ans+=a3;
+            else ans+=a4;
+    }
+    cout << ans;
+}431
