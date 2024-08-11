@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int t,x,y,k,m;
+    cin >> t;
+    
+    while(t--){
+        cin >> x >> y >> k;
+        m=k%x;
+        
+        if(m!=y){ 
+            if(m>y) { 
+                k-=(m-y);
+                cout << k <<endl; continue;
+            }
+            else {
+                k=k-m-(x-y);        
+                cout << k << endl; continue;
+            }
+        }
+          else {
+              cout << k << endl;
+              continue;
+          }
+    }
+}
