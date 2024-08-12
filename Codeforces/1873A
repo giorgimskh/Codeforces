@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short t,ans=0;
+    string s;
+    cin >> t;
+    
+    while(t--){
+        cin >> s;
+        ans=0;
+        if(s[0]!='a') ++ans;
+        if(s[1]!='b') ++ans;
+        if(s[2]!='c') ++ans;
+        
+       cout<< (ans==3 ? "NO":"YES") << endl;
+    }
+}
+   
