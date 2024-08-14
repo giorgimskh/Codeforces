@@ -1,0 +1,27 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+bool check(string s){
+    char ch='1';
+    map<char,short> mp;
+        for(char c:s){
+            if(c!=ch && mp[c]>0) return false;
+                else {++mp[c]; ch=c;}
+         }
+    return true;
+}
+
+int main(){
+    short t,n;
+    string s;
+    cin >> t;
+    
+    while(t--){
+        cin >> n >> s;
+        
+        if(check(s)) cout << "YES" << endl;
+            else cout << "NO" << endl;
+     }
+}
+   
