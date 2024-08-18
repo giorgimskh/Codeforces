@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int gr1,gr2;
+    short t,n,k;
+    cin >> t;
+    
+    while(t--){
+        cin >> n;
+        gr1=0; gr2=0;
+        
+        while(n--){
+           cin >> k;
+           
+           if(k==1) ++gr1;
+               else ++gr2;
+        }
+        if((gr1%2==0 && gr1!=0) || (gr1==0 && gr2%2==0)) cout << "YES" << endl;
+            else cout << "NO" << endl;
+    }
+}
