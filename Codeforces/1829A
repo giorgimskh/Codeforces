@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short t,ans;
+    string s,s1= "codeforces";
+    cin >> t;
+    
+    while(t--){
+        cin >> s;
+        ans=0;
+        
+        for(unsigned int i=0;i<s.size();++i) {
+            if(s[i]!=s1[i]) ++ans;
+        }
+        cout << ans << endl;    
+    }
+}1829
