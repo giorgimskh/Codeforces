@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int t,result[1440];
+    pair < short , short > clock[1440];
+    cin >>t;
+
+    for(int i=0;i<t;i++){
+        cin >> clock[i].first >> clock[i].second;
+        if(clock[i].second!=0) result[i]=(23-(clock[i].first))*60+(60-clock[i].second);
+            else result[i]=(24-clock[i].first)*60;
+    }
+
+    for(int j=0;j<t;j++){
+        cout << result[j] <<endl;
+    }
+}
