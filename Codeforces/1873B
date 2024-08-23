@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short test;
+    cin >> test;
+    
+    while(test--){
+        int prod=1;
+        short n,ans=10;
+        cin >> n;
+        short a[n];
+        
+        for(short i=0;i<n;++i) {
+            cin >> a[i];
+            if(a[i]<ans) ans=a[i];
+        }
+        
+        for(short i=0,k=0;i<n;++i){
+            if(a[i]==ans && k==0){
+                prod*=(a[i]+1);
+                ++k;
+            }
+                else prod*=a[i];
+        }
+        cout << prod << endl;
+    }
+}
