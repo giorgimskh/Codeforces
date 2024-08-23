@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    short test;
+    cin >> test;
+    
+    while(test--){
+        short numb,ans=10001;
+        cin >> numb;
+        short a[numb];
+        
+        for(short i=0;i<numb;++i) cin >> a[i];
+        sort(a,a+numb);
+        
+        for(short i=numb-1;i>0;--i){
+            if(a[i]-a[i-1]<ans) ans=a[i]-a[i-1];
+        }
+        cout << ans << endl;    
+    }
+}
