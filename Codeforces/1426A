@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short test,n,x;
+    cin >> test;
+    
+    while(test--){
+        cin >> n >> x;
+        cout << (n>2 ? (n-2)/x+((n-2)%x>0)+1:1) << endl;
+    }
+}
