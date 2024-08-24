@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short t,a,b;
+    char c;
+    cin >> t;
+    
+    while(cin >> a >> c >> b) cout << a+b << endl;
+}
