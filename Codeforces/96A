@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    short size,check=0;
+    string s;
+    cin >> s;
+    
+    size=s.size()-1;
+    for(short i=0;i<size;++i){
+        if(s[i+1]==s[i]) ++check;
+            else check=0;
+        
+        if(check>5){cout << "YES"; return 0;}       
+       }
+    cout << "NO";
+}
