@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,b,c,n;
+    short t;
+    cin >> t;
+    
+    while(t--){
+        cin >> a >> b >> c >> n;
+        
+        if(a>b) swap(a,b);
+        if(a>c) swap(a,c);
+        if(b>c) swap(b,c);
+        n=n-(c-a)-(c-b);
+        
+        cout << (n%3==0 && n>=0? "YES":"NO") << endl;    
+    }
+}
