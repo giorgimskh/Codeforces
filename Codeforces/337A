@@ -1,0 +1,17 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    short n,m,ans=1000;
+    cin >> n >> m;
+    short a[m];
+
+    for(short i=0;i<m;++i)cin >> a[i];
+    sort(a,a+m);
+
+    for(short i=0;i<m-n+1;++i){
+        if(a[i+n-1]-a[i]<ans) ans=a[i+n-1]-a[i];
+    }
+    cout << ans;
+}
