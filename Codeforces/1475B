@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    short t;
+    cin >> t;
+    
+    while(t--){
+        cin >> n;
+        cout << (n/2020>=n%2020 ? "YES":"NO")<<endl;
+    }
+}
